@@ -7,7 +7,6 @@ Django Auth in RESTful way
 
 ```console
 git clone https://github.com/sunliwen/django-authr.git
-git clone https://github.com/sunliwen/django-authr.git
 mkvirtualenv django-authr
 cd django-authr
 make develop
