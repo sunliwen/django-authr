@@ -1,4 +1,4 @@
-django-authr
+django-authr [![Build Status](https://travis-ci.org/sunliwen/django-authr.png?branch=master)](https://travis-ci.org/sunliwen/django-authr)
 ============
 
 Django Auth in RESTful way
@@ -38,4 +38,6 @@ make run
 
 Initially based on demo from @dustinfarris <https://github.com/dustinfarris/django-ember-authentication>
 
-### The MIT License (MIT)
+### License 
+
+(MIT)
