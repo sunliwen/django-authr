@@ -1,15 +1,18 @@
 {{#if isAuthenticated}}
   <p class="welcome">Welcome back, {{first_name}}!</p>
-  <button class="btn" {{action 'logout'}}>Logout</button>
+  <button class="btn btn-sm btn-primary submit" {{action 'logout'}}>Logout</button>
 {{else}}
   <form class="form-inline" {{action login on="submit"}}>
     <div class="form-group">
-      {{input class="username" value=username type="text" placeholder="Username"}}
+      <label class="sr-only" for="login-username">Username</label>
+      {{input class="form-control input-sm username" id="login-username" value=username type="text" placeholder="Username"}}
     </div>
     <div class="form-group">
-      {{input class="password" value=password type="password" placeholder="Password"}}
+      <label class="sr-only" for="login-password">Password</label>
+      {{input class="form-control input-sm password" id="login-password" value=password type="password" placeholder="Password"}}
     </div>
-    {{input class="submit btn" type="submit" value="Login"}}
+    {{input class="btn btn-sm btn-primary submit" type="submit" value="Login"}}
+    <button class="btn btn-sm btn-link register" {{action 'register'}}>Register</button>
   </form>
   {{#if errorMessage}}<span class="text-danger">{{errorMessage}}</span>{{/if}}
 {{/if}}
