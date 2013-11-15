@@ -25,6 +25,8 @@ develop:
 	pip install --upgrade setuptools
 	pip install --upgrade "flake8>=2.0"
 	pip install --upgrade -r requirements.txt
+
+migrate:
 	python manage.py syncdb --noinput
 
 run:
