@@ -1,7 +1,8 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import include, patterns, url
+from django.views.generic import TemplateView
 from rest_framework.routers import DefaultRouter
 
-from sessions.views import SessionView
+from session.views import SessionView
 from users.views import UserViewSet
 
 
@@ -21,4 +22,6 @@ urlpatterns = patterns(
     url(r'api/', include(router.urls)),
 
     url(r'^admin/', include(admin.site.urls)),
+    # Application
+    url(r'^$', TemplateView.as_view(template_name='application.html'))
 )

@@ -37,3 +37,10 @@ nosetests.xml
 
 # Sqlite
 *.sqlite3
+
+
+# NPM
+/node_modules/
+/static/
+/media/
+/vendor/
