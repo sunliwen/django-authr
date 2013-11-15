@@ -2,7 +2,7 @@ from django.conf.urls import include, patterns, url
 from django.views.generic import TemplateView
 from rest_framework.routers import DefaultRouter
 
-from session.views import SessionView
+from sessions.views import SessionView
 from users.views import UserViewSet
 
 
