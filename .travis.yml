@@ -8,4 +8,6 @@ install:
   - make develop
 # command to run tests
 script:
-  - make lint test-python
+  - make lint 
+  - make test-python
+  - make test-js
