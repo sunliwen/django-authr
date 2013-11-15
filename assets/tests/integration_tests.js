@@ -14,7 +14,7 @@ test("user gives bad credentials and receives error message", function() {
     httpStub('/session/', login_response);
 
     visit("/").then(function() {
-        fillIn(".username", "dustin");
+        fillIn(".username", "liwen");
         fillIn(".password", "wrong");
         return click(".submit");
     }).then(function() {
@@ -23,16 +23,16 @@ test("user gives bad credentials and receives error message", function() {
 });
 
 test("user logs in and receives welcome message", function() {
-    var dustin = {id: 1, username: "dustin", first_name: "Dustin", last_name: "Farris"}
+    var liwen = {id: 1, username: "liwen", first_name: "Liwen", last_name: "Sun"}
     var login_response = {success: true, user_id: 1}
     httpStub('/session/', login_response);
     httpStub('/api/users/1/', dustin);
 
     visit("/").then(function() {
-        fillIn(".username", "dustin");
+        fillIn(".username", "liwen");
         fillIn(".password", "right");
         return click('.submit');
     }).then(function() {
-        equal(find("p.welcome").text(), "Welcome back, Dustin!", "welcome message was not detected");
+        equal(find("p.welcome").text(), "Welcome back, Liwen!", "welcome message was not detected");
     });
 });
