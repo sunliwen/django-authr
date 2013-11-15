@@ -18,7 +18,10 @@ test-js:
 	@echo ""
 
 develop:
+	@echo "Heroku will judge this app as a node.js app, if there's a package.json file, but CircleCI need it."
+	cp npm.json package.json
 	npm install
+	rm package.json
 	pip install --upgrade setuptools
 	pip install --upgrade "flake8>=2.0"
 	pip install --upgrade -r requirements.txt
@@ -26,4 +29,3 @@ develop:
 
 run:
 	python manage.py runserver 0.0.0.0:8000
-
