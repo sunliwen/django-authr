@@ -1,4 +1,4 @@
-django-authr [![Build Status](https://travis-ci.org/sunliwen/django-authr.png?branch=master)](https://travis-ci.org/sunliwen/django-authr)
+django-authr [![Build Status](https://travis-ci.org/sunliwen/django-authr.png?branch=master)](https://travis-ci.org/sunliwen/django-authr) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sunliwen/django-authr/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 ============
 
 Django Auth in RESTful way
