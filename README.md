@@ -21,8 +21,11 @@ make
 ### Fire up a temp server
 
 ```console
+make migrate
 make run
 ```
+
+Run `open http://localhost:8000` to view the demo. The default username is `liwen` and password is `1234`.
 
 ### Authentication
 
@@ -37,6 +40,6 @@ make run
 
 Initially based on demo from @dustinfarris <https://github.com/dustinfarris/django-ember-authentication>
 
-### License 
+### License
 
 (MIT)
